@@ -1,0 +1,27 @@
+b {
+    @if $b-font-weight != $strong-font-weight {
+        font-weight: $b-font-weight;
+    }
+    @if mixin-exists(b-extra-style) {
+        @include b-extra-style();
+    }
+}
+
+strong {
+    @if $b-font-weight != $strong-font-weight {
+        font-weight: $strong-font-weight;
+    }
+    @if mixin-exists(strong-extra-style) {
+        @include strong-extra-style();
+    }
+}
+
+b,
+strong {
+    @if $b-font-weight == $strong-font-weight {
+        font-weight: $b-font-weight;
+    }
+    @if mixin-exists(b-strong-extra-style) {
+        @include b-strong-extra-style();
+    }
+}

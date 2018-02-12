@@ -1,0 +1,10 @@
+//B
+$b-font-weight: $bold-elements-font-weight !default;
+//@mixin b-extra-style() {} //Create this mixin before import module when you want add some special style for element
+
+//Strong
+$strong-font-weight: $bold-elements-font-weight !default;
+//@mixin strong-extra-style() {} //Create this mixin before import module when you want add some special style for element
+
+//B - Strong
+//@mixin b-strong-extra-style() {} //Create this mixin before import module when you want add some special style for element
